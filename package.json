@@ -3,9 +3,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "turbo run build --filter=\"./slides/**\" && turbo run build --filter=home",
+    "dev": "cd home && bun run dev",
+    "build": "turbo run build --filter=\"./slides/**\" && bun run scripts/update-slides-list.ts && turbo run build --filter=home",
     "export": "turbo run export --filter=\"./slides/**\"",
-    "new": "bun run scripts/new-slide.ts"
+    "new": "bun run scripts/new-slide.ts",
+    "update-slides-list": "bun run scripts/update-slides-list.ts"
   },
   "dependencies": {
     "@slidev/cli": "^51.5.0",

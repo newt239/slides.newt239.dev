@@ -25,8 +25,15 @@ fs.mkdirSync(target, { recursive: true });
 
 // slides.md
 const md = `---
-theme: seriph
+theme: default
 transition: slide
+title: ${name}
+titleTemplate: '%s'
+info: true
+author: newt239
+download: true
+htmlAttrs:
+  lang: ja
 ---
 # ${name}
 

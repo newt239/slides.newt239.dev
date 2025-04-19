@@ -1,3 +1,4 @@
+import { slides } from "slides";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -5,8 +6,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function loader() {
-  const slides = [{ id: "example", title: "Welcome to Slidev" }];
-
   return { slides };
 }
 
