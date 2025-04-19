@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cd home && bun run dev",
-    "build": "turbo run build --filter=\"./slides/**\" && bun run scripts/update-slides-list.ts && turbo run build --filter=home",
+    "build": "turbo run build --filter=\"./slides/**\" && bun run update-slides-list && turbo run build --filter=home",
     "export": "turbo run export --filter=\"./slides/**\"",
     "new": "bun run scripts/new-slide.ts",
     "update-slides-list": "bun run scripts/update-slides-list.ts"

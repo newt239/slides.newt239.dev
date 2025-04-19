@@ -29,9 +29,6 @@ theme: default
 transition: slide
 title: ${name}
 titleTemplate: '%s'
-info: true
-author: newt239
-download: true
 htmlAttrs:
   lang: ja
 ---

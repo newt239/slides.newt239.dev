@@ -3,7 +3,7 @@ import path from "path";
 
 async function main() {
   const distDir = path.resolve(__dirname, "../dist/slides");
-  const targetFile = path.resolve(__dirname, "../home/slides.ts");
+  const targetFile = path.resolve(__dirname, "../home/src/slides.ts");
   try {
     const entries: { id: string; title: string }[] = [];
     const items = await fs.readdir(distDir, { withFileTypes: true });
