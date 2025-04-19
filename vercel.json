@@ -5,7 +5,7 @@
       "destination": "/index.html"
     },
     {
-      "source": "/slides/(.*)",
+      "source": "/(.*)",
       "destination": "/slides/$1/index.html"
     }
   ]

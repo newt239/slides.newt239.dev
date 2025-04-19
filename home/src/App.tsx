@@ -6,7 +6,9 @@ function App() {
       <h1>slides.newt239.dev</h1>
       <ul>
         {slides.map((slide) => (
-          <li key={slide.id}>{slide.title}</li>
+          <li key={slide.id}>
+            <a href={`/slides/${slide.id}/`}>{slide.title}</a>
+          </li>
         ))}
       </ul>
     </>
