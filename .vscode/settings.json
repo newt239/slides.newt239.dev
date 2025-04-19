@@ -1,0 +1,7 @@
+{
+  "slidev.include": [
+    "**/slides.md",
+    "slides/example/slides.md",
+    "slides/what-is-accesibility/slides.md"
+  ]
+}

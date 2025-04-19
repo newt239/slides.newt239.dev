@@ -35,6 +35,7 @@ download: true
 htmlAttrs:
   lang: ja
 ---
+
 # ${name}
 
 - Your content here
@@ -63,5 +64,3 @@ console.log(`Installing dependencies in slides/${name}...`);
 execSync("bun install", { cwd: target, stdio: "inherit" });
 
 console.log(`Slide project created at slides/${name}`);
-console.log(`  cd slides/${name}`);
-console.log(`  bun run dev`);

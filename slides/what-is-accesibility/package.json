@@ -1,0 +1,9 @@
+{
+  "name": "what-is-accesibility",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /slides/what-is-accesibility/ --out ../../dist/slides/what-is-accesibility",
+    "export": "slidev export"
+  }
+}
