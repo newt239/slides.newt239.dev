@@ -2,8 +2,8 @@
   "name": "example",
   "version": "0.0.0",
   "scripts": {
-    "build": "slidev build --out ../../dist/example",
     "dev": "slidev --open",
+    "build": "slidev build --base /slides/example/ --out ../../dist/slides/example",
     "export": "slidev export"
   }
 }

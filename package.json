@@ -3,8 +3,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "cd slides/example && bun run build && cd - && cd home && bun run build",
-    "export": "turbo run export"
+    "build": "turbo run build --filter=\"./slides/**\" && turbo run build --filter=home",
+    "export": "turbo run export --filter=\"./slides/**\"",
+    "new": "bun run scripts/new-slide.ts"
   },
   "dependencies": {
     "@slidev/cli": "^51.5.0",
@@ -18,7 +19,7 @@
   },
   "workspaces": [
     "home",
-    "slides/*"
+    "slides/**"
   ],
   "packageManager": "bun@1.2.30"
 }
