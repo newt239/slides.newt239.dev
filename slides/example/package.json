@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build --base /slides/example/ --out ../../dist/slides/example",
+    "build": "slidev build --base /example/ --out ../../dist/example",
     "export": "slidev export"
   }
 }

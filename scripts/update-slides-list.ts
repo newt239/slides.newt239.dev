@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 async function main() {
-  const distDir = path.resolve(__dirname, "../dist/slides");
+  const distDir = path.resolve(__dirname, "../dist");
   const targetFile = path.resolve(__dirname, "../home/src/slides.ts");
   try {
     const entries: { id: string; title: string }[] = [];

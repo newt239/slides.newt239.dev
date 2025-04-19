@@ -6,7 +6,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/slides/$1/index.html"
+      "destination": "/$1/index.html"
     }
   ]
 }

@@ -7,7 +7,7 @@ function App() {
       <ul>
         {slides.map((slide) => (
           <li key={slide.id}>
-            <a href={`/slides/${slide.id}/`}>{slide.title}</a>
+            <a href={`/${slide.id}/`}>{slide.title}</a>
           </li>
         ))}
       </ul>
