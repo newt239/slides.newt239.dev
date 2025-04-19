@@ -1,4 +1,4 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# slides.newt239.dev
 
 To start the slide show:
 
