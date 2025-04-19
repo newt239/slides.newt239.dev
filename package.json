@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "turbo run build --filter=./slides/**",
-    "export": "turbo run export --filter=./slides/**"
+    "build": "turbo run build",
+    "export": "turbo run export"
   },
   "dependencies": {
     "@slidev/cli": "^51.5.0",
@@ -17,6 +17,7 @@
     "playwright-chromium": "^1.52.0"
   },
   "workspaces": [
+    "home",
     "slides/*"
   ],
   "packageManager": "bun@1.2.30"
