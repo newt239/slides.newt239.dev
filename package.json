@@ -15,5 +15,8 @@
   },
   "workspaces": [
     "slides/*"
-  ]
+  ],
+  "devDependencies": {
+    "playwright-chromium": "^1.52.0"
+  }
 }
