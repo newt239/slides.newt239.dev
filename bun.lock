@@ -7,6 +7,7 @@
         "@slidev/cli": "^51.5.0",
         "@slidev/theme-default": "latest",
         "@slidev/theme-seriph": "latest",
+        "@slidev/theme-shibainu": "^0.25.0",
         "turbo": "^2.5.0",
         "vue": "^3.5.13",
       },
@@ -328,6 +329,8 @@
     "@slidev/theme-default": ["@slidev/theme-default@0.25.0", "", { "dependencies": { "@slidev/types": "^0.47.0", "codemirror-theme-vars": "^0.1.2", "prism-theme-vars": "^0.2.4" } }, "sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw=="],
 
     "@slidev/theme-seriph": ["@slidev/theme-seriph@0.25.0", "", { "dependencies": { "@slidev/types": "^0.47.0", "codemirror-theme-vars": "^0.1.2", "prism-theme-vars": "^0.2.4" } }, "sha512-PnFQbn4I70+/cVie5iAr0Im6sYvnwjkO7Yj5KonTyJZFFJFytckLTrD3ijft/J4cRnz7OmSzTyQKNX1FN/x0YQ=="],
+
+    "@slidev/theme-shibainu": ["@slidev/theme-shibainu@0.25.0", "", { "dependencies": { "@slidev/types": "^0.47.0", "codemirror-theme-vars": "^0.1.2", "prism-theme-vars": "^0.2.4" } }, "sha512-ND4ZdF3L3EOB2UXCaBqhMfMFeyPG6lOXwz/DC29aaXkXSnuHYjNKMI79NJAISyLBnUgWGc4QjIJNntIAx4Uung=="],
 
     "@slidev/types": ["@slidev/types@51.5.0", "", { "dependencies": { "@antfu/utils": "^9.1.0", "@shikijs/markdown-it": "^3.2.1", "@vitejs/plugin-vue": "^5.2.3", "@vitejs/plugin-vue-jsx": "^4.1.2", "katex": "^0.16.21", "mermaid": "^11.6.0", "monaco-editor": "0.51.0", "shiki": "^3.2.1", "unocss": "^66.0.0", "unplugin-icons": "^22.1.0", "unplugin-vue-markdown": "^28.3.1", "vite-plugin-inspect": "^11.0.0", "vite-plugin-remote-assets": "^2.0.0", "vite-plugin-static-copy": "^2.3.0", "vite-plugin-vue-server-ref": "^1.0.0", "vue": "^3.5.13", "vue-router": "^4.5.0" } }, "sha512-T84+4vvq4SwjbkPo3i/t8Fk3ykY4nlqv3fqA8IH1IEsxvkqa8u7Yh0zuxkdDfVjyK2iUNV6P1/PK/36gTVToLQ=="],
 
@@ -1610,6 +1613,8 @@
     "@slidev/theme-default/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
 
     "@slidev/theme-seriph/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
+
+    "@slidev/theme-shibainu/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
 
     "@typescript-eslint/typescript-estree/minimatch": ["minimatch@9.0.5", "", { "dependencies": { "brace-expansion": "^2.0.1" } }, "sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow=="],
 

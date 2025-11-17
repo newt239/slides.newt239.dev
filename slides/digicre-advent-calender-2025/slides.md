@@ -1,12 +1,12 @@
 ---
-theme: default
+theme: ./theme
 transition: slide
 title: digicre-advent-calender-2025
-titleTemplate: '%s'
+titleTemplate: "%s"
 htmlAttrs:
   lang: ja
 ---
 
-# digicre-advent-calender-2025
+# Advent Calender 2025
 
 - Your content here
