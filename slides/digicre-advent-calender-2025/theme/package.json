@@ -18,15 +18,6 @@
     "node": ">=14.0.0",
     "slidev": ">=v0.47.0"
   },
-  "slidev": {
-    "colorSchema": "dark",
-    "defaults": {
-      "fonts": {
-        "sans": "Titillium Web",
-        "mono": "Fira Code"
-      }
-    }
-  },
   "dependencies": {
     "@slidev/types": "^0.47.0",
     "codemirror-theme-vars": "^0.1.2",
