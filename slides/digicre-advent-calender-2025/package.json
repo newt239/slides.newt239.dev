@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build --base /slides/digicre-advent-calender-2025/ --out ../../dist/slides/digicre-advent-calender-2025",
+    "build": "slidev build --base /digicre-advent-calender-2025/ --out ../../dist/digicre-advent-calender-2025",
     "export": "slidev export"
   }
 }
