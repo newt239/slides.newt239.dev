@@ -1,0 +1,9 @@
+{
+  "name": "digicre-advent-calender-2025",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /digicre-advent-calender-2025/ --out ../../dist/digicre-advent-calender-2025",
+    "export": "slidev export"
+  }
+}

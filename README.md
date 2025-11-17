@@ -2,6 +2,20 @@
 
 ## 新スライド作成
 
-```zsh
+```sh
 bun run new <slide-name>
+```
+
+## スライドプレビュー
+
+```sh
+cd slides/<slide-name>
+bun run dev
+```
+
+## スライドビルド
+
+```sh
+cd slides/<slide-name>
+bun run build
 ```
