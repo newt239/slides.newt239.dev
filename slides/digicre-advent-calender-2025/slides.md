@@ -64,8 +64,8 @@ layout: default
 etc...
 
 ---
-layout: iframe-right
-url: ./src/assets/advent-2024.jpg
+layout: image-right
+image: ./advent-2024.jpg
 class: 'rounded-r-none'
 ---
 
@@ -108,8 +108,8 @@ class: 'rounded-b-none flex flex-col h-0'
 ## 登録状況
 
 ---
-layout: iframe-right
-url: ./src/assets/advent-screenshot.jpg
+layout: image-right
+image: ./advent-screenshot.jpg
 class: 'rounded-r-none'
 ---
 
