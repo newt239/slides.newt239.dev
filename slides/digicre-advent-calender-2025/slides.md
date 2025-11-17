@@ -120,3 +120,22 @@ class: 'rounded-r-none'
 - 1個登録したけど、もう一つ書きたい！という方
 
 大歓迎！
+
+---
+layout: cover
+---
+
+
+<div>
+
+# Advent Calender 2025
+
+デジクリ 2025 年後期企画
+
+</div>
+
+<div class="flex justify-end">
+
+21st newt ( [@newt239](https://x.com/newt239) )
+
+</div>
