@@ -35,6 +35,10 @@
         "vite": "^6.3.1",
       },
     },
+    "slides/digicre-advent-calender-2025": {
+      "name": "digicre-advent-calender-2025",
+      "version": "0.0.0",
+    },
     "slides/example": {
       "name": "example",
       "version": "0.0.0",
@@ -782,6 +786,8 @@
     "devlop": ["devlop@1.1.0", "", { "dependencies": { "dequal": "^2.0.0" } }, "sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA=="],
 
     "diff-match-patch-es": ["diff-match-patch-es@1.0.1", "", {}, "sha512-KhSofrZDERg/NE6Nd+TK53knp2qz0o2Ix8rhkXd3Chfm7Wlo58Eq/juNmkyS6bS+3xS26L3Pstz3BdY/q+e9UQ=="],
+
+    "digicre-advent-calender-2025": ["digicre-advent-calender-2025@workspace:slides/digicre-advent-calender-2025"],
 
     "dns-packet": ["dns-packet@5.6.1", "", { "dependencies": { "@leichtgewicht/ip-codec": "^2.0.1" } }, "sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw=="],
 
