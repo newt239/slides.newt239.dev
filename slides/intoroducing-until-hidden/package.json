@@ -1,0 +1,9 @@
+{
+  "name": "intoroducing-until-hidden",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /slides/intoroducing-until-hidden/ --out ../../dist/slides/intoroducing-until-hidden",
+    "export": "slidev export"
+  }
+}
