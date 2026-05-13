@@ -11,5 +11,9 @@ export const slides = [
   {
     "id": "example",
     "title": "Welcome to Slidev"
+  },
+  {
+    "id": "slides/intoroducing-until-hidden",
+    "title": "HTMLの新しい属性値hidden=&quot;until-found&quot;"
   }
 ] as const
