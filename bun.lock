@@ -6,9 +6,8 @@
       "name": "slides.newt239.dev",
       "dependencies": {
         "@slidev/cli": "^51.5.0",
-        "@slidev/theme-default": "latest",
-        "@slidev/theme-seriph": "latest",
-        "@slidev/theme-shibainu": "^0.25.0",
+        "@slidev/theme-default": "^0.25.0",
+        "@slidev/theme-seriph": "^0.25.0",
         "turbo": "^2.5.0",
         "vue": "^3.5.13",
       },
@@ -54,12 +53,12 @@
       "name": "example",
       "version": "0.0.0",
     },
-    "slides/intoroducing-until-hidden": {
-      "name": "intoroducing-until-hidden",
+    "slides/introducing-until-hidden": {
+      "name": "introducing-until-hidden",
       "version": "0.0.0",
     },
-    "slides/what-is-accesibility": {
-      "name": "what-is-accesibility",
+    "slides/what-is-accessibility": {
+      "name": "what-is-accessibility",
       "version": "0.0.0",
     },
   },
@@ -994,7 +993,7 @@
 
     "internmap": ["internmap@1.0.1", "", {}, "sha512-lDB5YccMydFBtasVtxnZ3MRBHuaoE8GKsppq+EchKL2U4nK/DmEpPHNH8MZe5HkMtpSiTSOZwfN0tzYjO/lJEw=="],
 
-    "intoroducing-until-hidden": ["intoroducing-until-hidden@workspace:slides/intoroducing-until-hidden"],
+    "introducing-until-hidden": ["introducing-until-hidden@workspace:slides/introducing-until-hidden"],
 
     "ip-regex": ["ip-regex@5.0.0", "", {}, "sha512-fOCG6lhoKKakwv+C6KdsOnGvgXnmgfmp0myi3bcNwj3qfwPAxRKWEuFhvEFF7ceYIz6+1jRZ+yguLFAmUNPEfw=="],
 
@@ -1576,7 +1575,7 @@
 
     "webpack-virtual-modules": ["webpack-virtual-modules@0.6.2", "", {}, "sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ=="],
 
-    "what-is-accesibility": ["what-is-accesibility@workspace:slides/what-is-accesibility"],
+    "what-is-accessibility": ["what-is-accessibility@workspace:slides/what-is-accessibility"],
 
     "which": ["which@2.0.2", "", { "dependencies": { "isexe": "^2.0.0" }, "bin": { "node-which": "./bin/node-which" } }, "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA=="],
 

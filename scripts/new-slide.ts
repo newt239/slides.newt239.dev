@@ -40,14 +40,12 @@ htmlAttrs:
 fs.writeFileSync(path.join(target, "slides.md"), md);
 
 // package.json
-const basePath = `/slides/${name}/`;
-const outPath = `../../dist/slides/${name}`;
 const pkg: PackageJson = {
   name,
   version: "0.0.0",
   scripts: {
     dev: "slidev --open",
-    build: `slidev build --base ${basePath} --out ${outPath}`,
+    build: `slidev build --base /slides/${name}/ --out dist`,
     export: "slidev export",
   },
 };
@@ -56,8 +54,8 @@ fs.writeFileSync(
   JSON.stringify(pkg, null, 2)
 );
 
-// install dependencies
-console.log(`Installing dependencies in slides/${name}...`);
-execSync("bun install", { cwd: target, stdio: "inherit" });
+// install dependencies (workspace 追加を lockfile に反映)
+console.log("Running bun install at workspace root...");
+execSync("bun install", { cwd: root, stdio: "inherit" });
 
 console.log(`Slide project created at slides/${name}`);

@@ -2,20 +2,28 @@
   "$schema": "https://turborepo.org/schema.json",
   "tasks": {
     "build": {
-      "cache": false,
-      "dependsOn": [],
-      "outputs": [
-        "dist/**"
+      "outputs": ["dist/**"],
+      "inputs": [
+        "slides.md",
+        "package.json",
+        "public/**",
+        "theme/**",
+        "pages/**",
+        "components/**",
+        "snippets/**",
+        "src/**",
+        "index.html",
+        "vite.config.ts",
+        "tsconfig*.json"
       ]
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     },
     "export": {
       "cache": false,
-      "outputs": [
-        "dist/**"
-      ]
+      "outputs": ["dist/**"]
     }
   }
 }

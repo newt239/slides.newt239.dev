@@ -1,0 +1,9 @@
+{
+  "name": "introducing-until-hidden",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /slides/introducing-until-hidden/ --out dist",
+    "export": "slidev export"
+  }
+}
