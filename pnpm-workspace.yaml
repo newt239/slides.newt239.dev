@@ -1,0 +1,8 @@
+packages:
+  - "home"
+  - "slides/**"
+saveExact: true
+allowBuilds:
+  "@swc/core": true
+  esbuild: true
+  playwright-chromium: true

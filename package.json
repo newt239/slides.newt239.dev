@@ -3,25 +3,21 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "cd home && bun run dev",
-    "build": "bun run update-slides-list && turbo run build && bun run scripts/assemble-dist.ts",
+    "dev": "cd home && pnpm run dev",
+    "build": "pnpm run update-slides-list && turbo run build && node scripts/assemble-dist.ts",
     "export": "turbo run export --filter=\"./slides/**\"",
-    "new": "bun run scripts/new-slide.ts",
-    "update-slides-list": "bun run scripts/update-slides-list.ts"
+    "new": "node scripts/new-slide.ts",
+    "update-slides-list": "node scripts/update-slides-list.ts"
   },
   "dependencies": {
-    "@slidev/cli": "^51.5.0",
-    "@slidev/theme-default": "^0.25.0",
-    "@slidev/theme-seriph": "^0.25.0",
-    "turbo": "^2.5.0",
-    "vue": "^3.5.13"
+    "@slidev/cli": "52.16.0",
+    "@slidev/theme-default": "0.25.0",
+    "@slidev/theme-seriph": "0.25.0",
+    "turbo": "2.10.3",
+    "vue": "3.5.39"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.52.0"
+    "playwright-chromium": "1.61.1"
   },
-  "workspaces": [
-    "home",
-    "slides/**"
-  ],
-  "packageManager": "bun@1.2.30"
+  "packageManager": "pnpm@11.10.0"
 }

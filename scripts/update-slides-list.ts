@@ -1,6 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 
+const __dirname = import.meta.dirname;
+
 type SlideEntry = { name: string; title: string; path: string };
 
 function extractTitle(markdown: string): string | null {

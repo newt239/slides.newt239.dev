@@ -10,7 +10,7 @@ interface PackageJson {
 
 const [, , name] = process.argv;
 if (!name) {
-  console.error("Usage: bun run scripts/new-slide.ts -- <name>");
+  console.error("Usage: pnpm run new <name>");
   process.exit(1);
 }
 
@@ -55,7 +55,7 @@ fs.writeFileSync(
 );
 
 // install dependencies (workspace 追加を lockfile に反映)
-console.log("Running bun install at workspace root...");
-execSync("bun install", { cwd: root, stdio: "inherit" });
+console.log("Running pnpm install at workspace root...");
+execSync("pnpm install", { cwd: root, stdio: "inherit" });
 
 console.log(`Slide project created at slides/${name}`);

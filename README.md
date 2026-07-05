@@ -1,27 +1,36 @@
 # slides.newt239.dev
 
-Slidev 製スライドを管理する monorepo（Bun workspaces + Turborepo + Vercel）。
+Slidev 製スライドを管理する monorepo（pnpm workspaces + Turborepo + Vercel）。
 
+- Node.js / pnpm のバージョンは `mise.toml`（および `.node-version`）で固定
 - 各スライドは `slides/<slide-name>/` に置き、`https://slides.newt239.dev/slides/<slide-name>/` で公開される（**ディレクトリ名がそのまま URL になる**）
 - スライド一覧ページ（`home/`）はビルド時に `scripts/update-slides-list.ts` が各 `slides/*/slides.md` の frontmatter `title` から自動生成する
+- 依存パッケージは完全固定（exact pin）で、Dependabot が毎月まとめて更新 PR を作成し、CI が通れば自動マージされる
+
+## セットアップ
+
+```sh
+mise install
+pnpm install
+```
 
 ## 新スライド作成
 
 ```sh
-bun run new <slide-name>
+pnpm run new <slide-name>
 ```
 
 ## スライドプレビュー
 
 ```sh
 cd slides/<slide-name>
-bun run dev
+pnpm run dev
 ```
 
 ## 全体ビルド
 
 ```sh
-bun run build
+pnpm run build
 ```
 
 一覧生成 → 各スライドと home を turbo でビルド（キャッシュ有効）→ `dist/` へ集約、の順で実行される。デプロイは Vercel がこのコマンドを実行し `dist/` を配信する。
@@ -30,5 +39,5 @@ bun run build
 
 ```sh
 cd slides/<slide-name>
-bun run export
+pnpm run export
 ```
