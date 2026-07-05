@@ -58,4 +58,7 @@ fs.writeFileSync(
 console.log("Running pnpm install at workspace root...");
 execSync("pnpm install", { cwd: root, stdio: "inherit" });
 
+// スライド一覧（home/src/slides.ts）を更新
+execSync("node scripts/update-slides-list.ts", { cwd: root, stdio: "inherit" });
+
 console.log(`Slide project created at slides/${name}`);
