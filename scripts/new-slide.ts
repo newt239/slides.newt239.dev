@@ -10,7 +10,7 @@ interface PackageJson {
 
 const [, , name] = process.argv;
 if (!name) {
-  console.error("Usage: bun run scripts/new-slide.ts -- <name>");
+  console.error("Usage: pnpm run new <name>");
   process.exit(1);
 }
 
@@ -40,14 +40,12 @@ htmlAttrs:
 fs.writeFileSync(path.join(target, "slides.md"), md);
 
 // package.json
-const basePath = `/slides/${name}/`;
-const outPath = `../../dist/slides/${name}`;
 const pkg: PackageJson = {
   name,
   version: "0.0.0",
   scripts: {
     dev: "slidev --open",
-    build: `slidev build --base ${basePath} --out ${outPath}`,
+    build: `slidev build --base /slides/${name}/ --out dist`,
     export: "slidev export",
   },
 };
@@ -56,8 +54,11 @@ fs.writeFileSync(
   JSON.stringify(pkg, null, 2)
 );
 
-// install dependencies
-console.log(`Installing dependencies in slides/${name}...`);
-execSync("bun install", { cwd: target, stdio: "inherit" });
+// install dependencies (workspace 追加を lockfile に反映)
+console.log("Running pnpm install at workspace root...");
+execSync("pnpm install", { cwd: root, stdio: "inherit" });
+
+// スライド一覧（home/src/slides.ts）を更新
+execSync("node scripts/update-slides-list.ts", { cwd: root, stdio: "inherit" });
 
 console.log(`Slide project created at slides/${name}`);
