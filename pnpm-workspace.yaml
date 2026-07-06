@@ -2,6 +2,7 @@ packages:
   - "home"
   - "slides/**"
 saveExact: true
+verifyDepsBeforeRun: false
 allowBuilds:
   "@swc/core": true
   esbuild: true
