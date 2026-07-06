@@ -31,6 +31,9 @@ title: ${name}
 titleTemplate: '%s'
 htmlAttrs:
   lang: ja
+seoMeta:
+  ogImage: auto
+  twitterCard: summary_large_image
 ---
 
 # ${name}

@@ -5,6 +5,7 @@
       "outputs": ["dist/**"],
       "inputs": [
         "slides.md",
+        "og-image.png",
         "package.json",
         "public/**",
         "theme/**",

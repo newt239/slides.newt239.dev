@@ -3,6 +3,30 @@ import path from "path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const distDir = path.join(root, "dist");
+const siteOrigin = "https://slides.newt239.dev";
+
+async function absolutizeOgImage(indexHtmlPath: string, baseUrl: string) {
+  let html: string;
+  try {
+    html = await fs.readFile(indexHtmlPath, "utf-8");
+  } catch {
+    return;
+  }
+  const rewritten = html.replace(
+    /(<meta[^>]*property="(?:og|twitter):image"[^>]*content=")([^"]+)(")/g,
+    (match, prefix, url, suffix) => {
+      if (/^https?:\/\//.test(url)) return match;
+      const absolute = url.startsWith("/")
+        ? `${siteOrigin}${url}`
+        : `${baseUrl}/${url.replace(/^\.\//, "")}`;
+      return `${prefix}${absolute}${suffix}`;
+    }
+  );
+  if (rewritten !== html) {
+    await fs.writeFile(indexHtmlPath, rewritten);
+    console.log(`Absolutized og:image in ${indexHtmlPath}`);
+  }
+}
 
 async function main() {
   await fs.rm(distDir, { recursive: true, force: true });
@@ -24,6 +48,12 @@ async function main() {
     await fs.cp(built, path.join(distDir, "slides", dirent.name), {
       recursive: true,
     });
+    for (const htmlName of ["index.html", "404.html"]) {
+      await absolutizeOgImage(
+        path.join(distDir, "slides", dirent.name, htmlName),
+        `${siteOrigin}/slides/${dirent.name}`
+      );
+    }
     console.log(`Copied ${dirent.name} -> dist/slides/${dirent.name}`);
   }
 }

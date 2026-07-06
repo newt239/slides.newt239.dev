@@ -6,6 +6,9 @@ titleTemplate: '%s'
 htmlAttrs:
   lang: ja
 mdc: true
+seoMeta:
+  ogImage: auto
+  twitterCard: summary_large_image
 layout: cover
 class: text-center
 ---

@@ -22,8 +22,9 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # open graph
-# seoMeta:
-#  ogImage: https://cover.sli.dev
+seoMeta:
+  ogImage: auto
+  twitterCard: summary_large_image
 ---
 
 # Welcome to Slidev

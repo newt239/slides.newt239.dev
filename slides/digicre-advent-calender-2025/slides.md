@@ -7,6 +7,9 @@ htmlAttrs:
   lang: ja
 fonts:
   sans: "M PLUS Rounded 1c"
+seoMeta:
+  ogImage: auto
+  twitterCard: summary_large_image
 ---
 
 <div>
