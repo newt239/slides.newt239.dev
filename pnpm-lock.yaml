@@ -71,6 +71,8 @@ importers:
         specifier: 8.1.3
         version: 8.1.3(@types/node@22.20.0)(jiti@2.7.0)(yaml@2.9.0)
 
+  slides/cjk-font-fallback: {}
+
   slides/digicre-advent-calender-2025: {}
 
   slides/digicre-advent-calender-2025/theme:

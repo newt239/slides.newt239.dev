@@ -1,0 +1,9 @@
+{
+  "name": "cjk-font-fallback",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /slides/cjk-font-fallback/ --out dist",
+    "export": "slidev export"
+  }
+}
