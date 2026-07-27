@@ -5,6 +5,12 @@
   --slidev-code-margin: var(--a1-para-gap) 0 0;
 }
 
+.slidev-layout pre,
+.slidev-layout code {
+  word-break: normal;
+  line-break: auto;
+}
+
 .slidev-layout code {
   font-family: var(--slidev-code-font-family, "JetBrains Mono", ui-monospace, monospace);
   font-size: 1em;

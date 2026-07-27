@@ -19,8 +19,11 @@ body,
   font-family: var(--a1-font);
   font-weight: 500;
   font-size: var(--a1-body-size);
-  line-height: 1.25;
+  line-height: var(--a1-line-height);
   font-feature-settings: "palt" 1;
+  word-break: auto-phrase;
+  line-break: strict;
+  text-wrap: pretty;
   overflow: hidden;
 }
 
@@ -32,6 +35,7 @@ body,
   font-weight: 700;
   font-size: var(--a1-title-size);
   line-height: 1;
+  text-wrap: balance;
 }
 
 .slidev-layout.a1-default h1::before,
@@ -68,12 +72,13 @@ body,
   margin: 0 0 var(--a1-title-gap);
   font-weight: 700;
   font-size: var(--a1-body-size);
-  line-height: 1.25;
+  line-height: var(--a1-line-height);
+  text-wrap: balance;
 }
 
 .slidev-layout p {
   margin: var(--a1-para-gap) 0 0;
-  line-height: 1.25;
+  line-height: var(--a1-line-height);
 }
 
 .slidev-layout p:first-child {
@@ -91,7 +96,7 @@ body,
   margin: var(--a1-para-gap) 0 0;
   padding-left: var(--a1-hang);
   text-indent: calc(-1 * var(--a1-hang));
-  line-height: var(--a1-list-line);
+  line-height: var(--a1-line-height);
 }
 
 .slidev-layout li::before {
@@ -135,7 +140,7 @@ body,
 .slidev-layout .caption {
   color: var(--a1-muted);
   font-size: var(--a1-caption-size);
-  line-height: 1.5;
+  line-height: var(--a1-line-height);
 }
 
 .slidev-layout .shot {
