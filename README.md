@@ -4,7 +4,8 @@ Slidev 製スライドを管理する monorepo（pnpm workspaces + Turborepo + V
 
 - Node.js / pnpm のバージョンは `mise.toml`（および `.node-version`）で固定
 - 各スライドは `slides/<slide-name>/` に置き、`https://slides.newt239.dev/slides/<slide-name>/` で公開される（**ディレクトリ名がそのまま URL になる**）
-- スライド一覧ページ（`home/`）はビルド時に `scripts/update-slides-list.ts` が各 `slides/*/slides.md` の frontmatter `title` から自動生成する
+- スライド一覧ページ（`home/`）はビルド時に `scripts/update-slides-list.ts` が各 `slides/*/slides.md` の frontmatter `title` と `eventDate` から自動生成する
+- 発表日は frontmatter の `eventDate`（`YYYY/MM/DD` 形式）で管理し、一覧は新しい順に並ぶ。`pnpm run new` で作成した場合は作成日が自動で入るので、発表日が決まったら書き換える
 - 依存パッケージは完全固定（exact pin）で、Dependabot が毎月まとめて更新 PR を作成し、CI が通れば自動マージされる
 
 ## セットアップ

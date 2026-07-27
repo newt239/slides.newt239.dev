@@ -1,0 +1,42 @@
+:root {
+  --a1-bg: #efebe9;
+  --a1-fg: #3e2723;
+  --a1-accent: #5d4037;
+  --a1-muted: #5d4037;
+
+  --a1-surface: #ffffff;
+  --a1-line: rgb(93 64 55 / 22%);
+  --a1-code-bg: rgb(62 39 35 / 8%);
+
+  --a1-cover-bg: #3e2723;
+  --a1-cover-fg: #efebe9;
+  --a1-cover-rule: #8d6e63;
+
+  --a1-margin-x: 7cqw;
+  --a1-title-top: 6cqh;
+  --a1-title-gap: 6cqh;
+  --a1-footer-top: 93.25cqh;
+  --a1-footer-rule-gap: 1.5cqh;
+  --a1-progress-h: 0.5cqh;
+
+  --a1-title-size: 2.5cqw;
+  --a1-cover-title-size: 4.25cqw;
+  --a1-subtitle-size: 2.5cqw;
+  --a1-body-size: 3cqw;
+  --a1-caption-size: 1.75cqw;
+  --a1-footer-size: 1.25cqw;
+
+  --a1-title-bar-color: #3e2723;
+  --a1-title-bar-h: 1.25em;
+  --a1-title-bar-gap: 1.5cqw;
+
+  --a1-hang: 3cqw;
+  --a1-para-gap: 1cqw;
+  --a1-bullet-size: 2.25cqw;
+  --a1-bullet-color: #8d6e63;
+  --a1-line-height: 1.5;
+
+  --a1-font: "A P-OTF A1ゴシック StdN", "A P-OTF A1Gothic StdN", "A-OTF A1ゴシック Std",
+    "Zen Kaku Gothic New", ui-sans-serif, system-ui, -apple-system, "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
+}

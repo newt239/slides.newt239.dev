@@ -5,6 +5,7 @@ title: スマホを英語にしたら日本語が「中国語」になった話
 titleTemplate: '%s'
 htmlAttrs:
   lang: ja
+eventDate: 2026/07/06
 mdc: true
 seoMeta:
   ogImage: auto
