@@ -18,7 +18,7 @@ seoMeta:
   ogImage: auto
   twitterCard: summary_large_image
 layout: cover
-speaker: newt239
+speaker: "@newt239"
 subtitle: 雑LT_study
 ---
 
@@ -56,6 +56,8 @@ layout: default
 - それまで真偽属性だったhiddenが列挙属性に
 - 2022年3月にLiving Standardとして取り込まれた
 
+<img class="shot mt-4" src="./public/whatwg-pr-7475.png" alt="whatwg/htmlのPull Request #7475がMergedになっている様子">
+
 ---
 layout: default
 ---
@@ -64,13 +66,13 @@ layout: default
 
 ブラウザのページ内検索やテキストフラグメントでヒットしたときに、hiddenが解除されてスクロールされるようになる
 
+<iframe class="embed" src="https://ja.wikipedia.org/wiki/HTML#W3C標準" title="Wikipedia「HTML」の記事"></iframe>
+
 ---
 layout: default
 ---
 
-# Wikipediaでの実装例
-
-関連項目のセクション
+# Wikipediaの関連項目セクションにおける実装例
 
 <div class="shots">
   <figure>
@@ -92,7 +94,7 @@ layout: default
 - アコーディオンではこちらを使用する
 - until-foundと同じ2025年12月のSafari 26.2でShip
   - ただし「マッチ箇所へスクロールしない」既知バグ（[WebKit #304174](https://webkit.org/b/304174)）が未修正
-  - そのためBaselineは現在Limited availability
+  - そのためBaselineは現在Limited available
 
 <img class="shot mt-4" src="./public/baseline-until-found.png" alt="Web Platform Statusのhidden=until-foundはLimited availability" style="width: 62%">
 
@@ -103,6 +105,12 @@ layout: default
 # 非対応ブラウザで使っても問題ない
 
 hidden="until-found"がhidden="true"へフォールバックされるだけ
+
+```html
+<div hidden="until-found">
+  検索でヒットさせたい本文
+</div>
+```
 
 ---
 layout: default
