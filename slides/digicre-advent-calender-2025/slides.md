@@ -5,6 +5,7 @@ title: digicre-advent-calender-2025
 titleTemplate: "%s"
 htmlAttrs:
   lang: ja
+eventDate: 2025/12/01
 fonts:
   sans: "M PLUS Rounded 1c"
 seoMeta:

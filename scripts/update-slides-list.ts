@@ -3,14 +3,19 @@ import path from "path";
 
 const __dirname = import.meta.dirname;
 
-type SlideEntry = { name: string; title: string; path: string };
+type SlideEntry = { name: string; title: string; date: string; path: string };
 
-function extractTitle(markdown: string): string | null {
+function extractField(markdown: string, key: string): string | null {
   const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(markdown);
   if (!frontmatter) return null;
-  const title = /^title:\s*(.+)\s*$/m.exec(frontmatter[1]);
-  if (!title) return null;
-  return title[1].trim().replace(/^(['"])(.*)\1$/, "$2");
+  const field = new RegExp(`^${key}:\\s*(.+)\\s*$`, "m").exec(frontmatter[1]);
+  if (!field) return null;
+  return field[1].trim().replace(/^(['"])(.*)\1$/, "$2");
+}
+
+function toISODate(value: string | null): string {
+  if (!value) return "";
+  return value.replaceAll("/", "-");
 }
 
 async function collectSlides(slidesDir: string): Promise<SlideEntry[]> {
@@ -27,11 +32,19 @@ async function collectSlides(slidesDir: string): Promise<SlideEntry[]> {
     }
     entries.push({
       name: dirent.name,
-      title: extractTitle(markdown) ?? dirent.name,
+      title: extractField(markdown, "title") ?? dirent.name,
+      date: toISODate(extractField(markdown, "eventDate")),
       path: `/slides/${dirent.name}/`,
     });
   }
-  return entries.sort((a, b) => a.name.localeCompare(b.name));
+  return entries.sort((a, b) => {
+    if (a.date !== b.date) {
+      if (!a.date) return 1;
+      if (!b.date) return -1;
+      return b.date.localeCompare(a.date);
+    }
+    return a.name.localeCompare(b.name);
+  });
 }
 
 async function main() {

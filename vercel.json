@@ -1,16 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/example/:path*",
-      "destination": "/slides/example/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/what-is-accesibility/:path*",
-      "destination": "/slides/what-is-accessibility/:path*",
-      "permanent": true
-    },
-    {
       "source": "/digicre-advent-calender-2025/:path*",
       "destination": "/slides/digicre-advent-calender-2025/:path*",
       "permanent": true

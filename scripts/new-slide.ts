@@ -24,6 +24,13 @@ if (fs.existsSync(target)) {
 fs.mkdirSync(target, { recursive: true });
 
 // slides.md
+const today = new Date();
+const eventDate = [
+  today.getFullYear(),
+  String(today.getMonth() + 1).padStart(2, "0"),
+  String(today.getDate()).padStart(2, "0"),
+].join("/");
+
 const md = `---
 theme: default
 transition: slide
@@ -31,6 +38,7 @@ title: ${name}
 titleTemplate: '%s'
 htmlAttrs:
   lang: ja
+eventDate: ${eventDate}
 seoMeta:
   ogImage: auto
   twitterCard: summary_large_image

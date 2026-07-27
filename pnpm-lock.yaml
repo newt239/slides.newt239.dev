@@ -87,11 +87,7 @@ importers:
         specifier: 0.2.5
         version: 0.2.5
 
-  slides/example: {}
-
   slides/introducing-until-hidden: {}
-
-  slides/what-is-accessibility: {}
 
 packages:
 
