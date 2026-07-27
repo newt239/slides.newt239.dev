@@ -23,12 +23,8 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1/index.html"
+      "source": "/slides/:slide/:path*",
+      "destination": "/slides/:slide/index.html"
     }
   ]
 }
