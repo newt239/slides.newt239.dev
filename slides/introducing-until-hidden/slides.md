@@ -30,7 +30,7 @@ layout: image-right
 
 # newt <span class="muted subtitle-size">@newt239</span>
 
-<ul class="profile">
+<ul>
   <li>学生</li>
   <li>興味領域
     <ul>
@@ -120,12 +120,8 @@ layout: default
 
 # 参考リンク
 
-<div class="links">
-
 - MDN: [hidden グローバル属性](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Global_attributes/hidden)
 - Chrome for Developers: [hidden=until-found](https://developer.chrome.com/docs/css-ui/hidden-until-found)
 - WHATWG HTML Standard: [The hidden attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute)
 - Web Platform Status: [hidden-until-found](https://webstatus.dev/features/hidden-until-found)
 - 実例: [ja.m.wikipedia.org](https://ja.m.wikipedia.org/wiki/HTML)
-
-</div>
