@@ -1,14 +1,23 @@
 :root {
-  --a1-bg: #f5f5f5;
-  --a1-fg: #212121;
-  --a1-muted: #616161;
-  --a1-accent: #156082;
+  --a1-bg: #efebe9;
+  --a1-fg: #3e2723;
+  --a1-accent: #5d4037;
+  --a1-muted: #5d4037;
+
+  --a1-surface: #ffffff;
+  --a1-line: rgb(93 64 55 / 22%);
+  --a1-code-bg: rgb(62 39 35 / 8%);
+
+  --a1-cover-bg: #3e2723;
+  --a1-cover-fg: #efebe9;
+  --a1-cover-rule: #8d6e63;
 
   --a1-margin-x: 6.875cqw;
   --a1-title-top: 9.749cqh;
   --a1-title-gap: 1.68cqh;
   --a1-footer-top: 93.328cqh;
-  --a1-subtitle-bottom: 9.82cqh;
+  --a1-footer-rule-gap: 1.4cqh;
+  --a1-progress-h: 0.4cqh;
 
   --a1-title-size: 4.583cqw;
   --a1-cover-title-size: 4.167cqw;

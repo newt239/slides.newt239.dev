@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SlideFooter from '../components/SlideFooter.vue'
+</script>
+
 <template>
   <div class="slidev-layout a1-image-right">
     <div class="a1-image-right-body">
@@ -6,6 +10,7 @@
     <div class="a1-image-right-media">
       <slot name="media" />
     </div>
+    <SlideFooter />
   </div>
 </template>
 
@@ -25,6 +30,7 @@
 .a1-image-right-media img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
 }
 </style>

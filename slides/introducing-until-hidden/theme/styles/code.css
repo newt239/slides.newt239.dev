@@ -5,15 +5,17 @@
 
 .slidev-layout :not(pre) > code {
   padding: 0.08em 0.28em;
+  border: 1px solid var(--a1-line);
   border-radius: 0.35cqw;
-  background: rgb(33 33 33 / 7%);
+  background: var(--a1-code-bg);
 }
 
 .slidev-layout pre.shiki {
   margin: var(--a1-para-gap) 0 0;
   padding: 1.6cqw 2cqw;
+  border: 1px solid var(--a1-line);
   border-radius: 0.8cqw;
-  background: #fff !important;
+  background: var(--a1-surface) !important;
   font-size: var(--a1-caption-size);
   line-height: 1.6;
   overflow-x: auto;

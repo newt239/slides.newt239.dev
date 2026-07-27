@@ -1,3 +1,10 @@
+html,
+body,
+.slidev-slide-content,
+.print-slide-container {
+  font-family: var(--a1-font);
+}
+
 .slidev-slide-content,
 .print-slide-container {
   container-type: size;
@@ -63,13 +70,20 @@
   font-size: 0.42em;
   vertical-align: 0.18em;
   text-indent: 0;
-  color: var(--a1-fg);
+  color: var(--a1-accent);
 }
 
 .slidev-layout ul ul {
   margin-top: calc(var(--a1-para-gap) / 2);
   padding-left: var(--a1-hang);
   font-size: var(--a1-body-size-lv2);
+}
+
+.slidev-layout ul ul li::before {
+  content: "―";
+  font-size: 0.5em;
+  vertical-align: 0.24em;
+  opacity: 0.75;
 }
 
 .slidev-layout ul ul li {
@@ -86,8 +100,7 @@
 
 .slidev-layout a {
   color: var(--a1-accent);
-  border-bottom: 1px solid currentColor;
-  border-bottom-style: solid;
+  border-bottom: 1px dashed currentColor;
   text-decoration: none;
 }
 
@@ -117,8 +130,8 @@
 
 .slidev-layout .shot {
   display: block;
+  border: 1px solid var(--a1-line);
   border-radius: 0.8cqw;
-  box-shadow: 0 0.4cqw 1.6cqw rgb(0 0 0 / 12%);
 }
 
 .slidev-layout .shots {

@@ -18,6 +18,7 @@ seoMeta:
   ogImage: auto
   twitterCard: summary_large_image
 layout: cover
+speaker: newt239
 subtitle: 雑LT_study
 ---
 
