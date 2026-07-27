@@ -1,0 +1,27 @@
+:root {
+  --a1-bg: #f5f5f5;
+  --a1-fg: #212121;
+  --a1-muted: #616161;
+  --a1-accent: #156082;
+
+  --a1-margin-x: 6.875cqw;
+  --a1-title-top: 9.749cqh;
+  --a1-title-gap: 1.68cqh;
+  --a1-footer-top: 93.328cqh;
+  --a1-subtitle-bottom: 9.82cqh;
+
+  --a1-title-size: 4.583cqw;
+  --a1-cover-title-size: 4.167cqw;
+  --a1-subtitle-size: 2.5cqw;
+  --a1-body-size: 2.917cqw;
+  --a1-body-size-lv2: 2.5cqw;
+  --a1-caption-size: 1.875cqw;
+  --a1-footer-size: 1.25cqw;
+
+  --a1-hang: 1.875cqw;
+  --a1-para-gap: 1.042cqw;
+
+  --a1-font: "A P-OTF A1ゴシック StdN", "A P-OTF A1Gothic StdN", "A-OTF A1ゴシック Std",
+    "Zen Kaku Gothic New", ui-sans-serif, system-ui, -apple-system, "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
+}

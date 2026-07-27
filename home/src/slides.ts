@@ -17,7 +17,7 @@ export const slides = [
   },
   {
     "name": "introducing-until-hidden",
-    "title": "HTMLの新しい属性値hidden=\"until-found\"",
+    "title": "hidden=\"until-found\"を使ってアクセシブルな折りたたみを実装する",
     "path": "/slides/introducing-until-hidden/"
   },
   {
