@@ -21,10 +21,10 @@ import SlideFooter from '../components/SlideFooter.vue'
 
 .a1-image-right-media {
   position: absolute;
-  left: 51.951cqw;
-  top: var(--a1-title-top);
-  width: 41.173cqw;
-  height: 41.173cqw;
+  left: 55.5cqw;
+  top: 17.5cqh;
+  width: 37.5cqw;
+  height: 37.5cqw;
 }
 
 .a1-image-right-media img {

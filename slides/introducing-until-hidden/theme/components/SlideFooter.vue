@@ -33,7 +33,7 @@ const pageLabel = computed(() => String($page.value).padStart(2, '0'))
   color: var(--a1-muted);
   font-weight: 500;
   font-size: var(--a1-footer-size);
-  line-height: 1.2;
+  line-height: 1.25;
   pointer-events: none;
 }
 
@@ -48,7 +48,7 @@ const pageLabel = computed(() => String($page.value).padStart(2, '0'))
   flex: none;
   color: var(--a1-fg);
   font-weight: 700;
-  font-size: 1.15em;
+  font-size: 1.25em;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.06em;
 }

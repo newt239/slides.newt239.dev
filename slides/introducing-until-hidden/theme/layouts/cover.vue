@@ -36,7 +36,7 @@ const { $slidev } = useSlideContext()
   left: 0;
   top: 0;
   bottom: 0;
-  width: 1.1cqw;
+  width: 1cqw;
   background: var(--a1-accent);
 }
 
@@ -44,11 +44,11 @@ const { $slidev } = useSlideContext()
   margin: 0;
   color: var(--a1-cover-fg);
   font-size: var(--a1-cover-title-size);
-  line-height: 1.28;
+  line-height: 1.25;
 }
 
 .a1-cover-speaker {
-  margin-top: 4.4cqh;
+  margin-top: 4.5cqh;
   font-size: var(--a1-subtitle-size);
   font-weight: 700;
   letter-spacing: 0.02em;
