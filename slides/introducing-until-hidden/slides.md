@@ -89,12 +89,11 @@ layout: default
 layout: default
 ---
 
-# details/summaryでも同様の効果が
+# details/summaryでも同様の効果が得られる
 
-- アコーディオンではこちらを使用する
-- until-foundと同じ2025年12月のSafari 26.2でShip
-  - ただし「マッチ箇所へスクロールしない」既知バグ（[WebKit #304174](https://webkit.org/b/304174)）が未修正
-  - そのためBaselineは現在Limited available
+- アコーディオンUIではこちらを使用する
+- detailsタグ要素の自動展開についてはSafariでは26.2で実装
+  - ただしマッチ箇所へスクロールしないバグが未修正のため、Baselineでは現在Limited Available
 
 <img class="shot mt-4" src="./public/baseline-until-found.png" alt="Web Platform Statusのhidden=until-foundはLimited availability" style="width: 62%">
 
@@ -106,11 +105,7 @@ layout: default
 
 hidden="until-found"がhidden="true"へフォールバックされるだけ
 
-```html
-<div hidden="until-found">
-  検索でヒットさせたい本文
-</div>
-```
+<img class="shot mt-4" src="./public/mdn-hidden-fallback.png" alt="MDNの解説。無効なhiddenの値を指定した場合もその要素はhidden状態に設定されると書かれ、hiddenやhidden=&quot;bananas&quot;などのHTMLコード例が続く" style="width: 88%">
 
 ---
 layout: default
@@ -129,7 +124,7 @@ layout: default
 # 参考リンク
 
 - MDN: [hidden グローバル属性](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Global_attributes/hidden)
-- Chrome for Developers: [hidden=until-found](https://developer.chrome.com/docs/css-ui/hidden-until-found)
+- Chrome for Developers: [折りたたまれたコンテンツを hidden=until-found でアクセスできるようにする](https://developer.chrome.com/docs/css-ui/hidden-until-found?hl=ja)
+- TAKLOG: [タブやアコーディオンの非表示コンテンツにはhidden="until-found"を使うべし](https://www.tak-dcxi.com/article/use-until-found-for-hiding-tabs-and-accordions/)
 - WHATWG HTML Standard: [The hidden attribute](https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute)
 - Web Platform Status: [hidden-until-found](https://webstatus.dev/features/hidden-until-found)
-- 実例: [ja.m.wikipedia.org](https://ja.m.wikipedia.org/wiki/HTML)
