@@ -19,7 +19,7 @@
     "slidev": ">=v0.47.0"
   },
   "dependencies": {
-    "@slidev/types": "52.16.0",
+    "@slidev/types": "52.18.0",
     "codemirror-theme-vars": "0.1.2",
     "prism-theme-vars": "0.2.5"
   }
