@@ -1,0 +1,200 @@
+html,
+body,
+.slidev-slide-content,
+.print-slide-container {
+  font-family: var(--pn-font);
+}
+
+.slidev-slide-content,
+.print-slide-container {
+  container-type: size;
+}
+
+.slidev-layout {
+  position: relative;
+  height: 100%;
+  padding: var(--pn-title-top) var(--pn-margin-x) 9cqh;
+  background: var(--pn-bg);
+  color: var(--pn-fg);
+  font-family: var(--pn-font);
+  font-weight: 500;
+  font-size: var(--pn-body-size);
+  line-height: var(--pn-line-height);
+  font-feature-settings: "palt" 1;
+  word-break: auto-phrase;
+  line-break: strict;
+  text-wrap: pretty;
+  overflow: hidden;
+}
+
+.slidev-layout h1,
+.slidev-layout h2 {
+  margin: 0 0 var(--pn-title-gap);
+  color: var(--pn-fg);
+  font-family: var(--pn-heading-font);
+  font-weight: 700;
+  font-size: var(--pn-title-size);
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.slidev-layout.pn-default h1::before,
+.slidev-layout.pn-default h2::before,
+.slidev-layout.pn-image-right h1::before,
+.slidev-layout.pn-image-right h2::before {
+  content: "";
+  display: inline-block;
+  vertical-align: var(--pn-glyph-shift);
+  width: calc(var(--pn-margin-x) - var(--pn-title-bar-gap));
+  height: 1em;
+  margin-left: calc(-1 * var(--pn-margin-x));
+  margin-right: var(--pn-title-bar-gap);
+  background: repeating-linear-gradient(
+    to left,
+    var(--pn-gold) 0 1em,
+    transparent 1em 1.24em
+  );
+}
+
+.slidev-layout.pn-default h1::after,
+.slidev-layout.pn-default h2::after,
+.slidev-layout.pn-image-right h1::after,
+.slidev-layout.pn-image-right h2::after {
+  content: "";
+  display: inline-block;
+  vertical-align: var(--pn-glyph-shift);
+  width: 100cqw;
+  height: 1em;
+  margin-left: var(--pn-title-bar-gap);
+  margin-right: calc(-100cqw - var(--pn-title-bar-gap));
+  background: repeating-linear-gradient(
+    to right,
+    var(--pn-gold) 0 1em,
+    transparent 1em 1.24em
+  );
+}
+
+.slidev-layout h3 {
+  margin: 0 0 var(--pn-title-gap);
+  font-family: var(--pn-heading-font);
+  font-weight: 700;
+  font-size: var(--pn-body-size);
+  line-height: var(--pn-line-height);
+  text-wrap: balance;
+}
+
+.slidev-layout p {
+  margin: var(--pn-para-gap) 0 0;
+  line-height: var(--pn-line-height);
+}
+
+.slidev-layout p:first-child {
+  margin-top: 0;
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slidev-layout li {
+  margin: var(--pn-para-gap) 0 0;
+  padding-left: var(--pn-hang);
+  text-indent: calc(-1 * var(--pn-hang));
+  line-height: var(--pn-line-height);
+}
+
+.slidev-layout li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: var(--pn-glyph-shift);
+  width: 1em;
+  height: 1em;
+  margin-right: var(--pn-bullet-gap);
+  background: var(--pn-gold);
+}
+
+.slidev-layout ul ul {
+  margin-top: var(--pn-para-gap);
+  font-size: 0.85em;
+}
+
+.slidev-layout ul ul li::before {
+  background: var(--pn-gray);
+}
+
+.slidev-layout a {
+  color: var(--pn-gray);
+  border-bottom: 1px dashed currentColor;
+  text-decoration: none;
+}
+
+.slidev-layout a:hover {
+  opacity: 0.75;
+}
+
+.slidev-layout strong,
+.slidev-layout b {
+  font-weight: 700;
+}
+
+.slidev-layout :not(pre) > code {
+  padding: 0.1em 0.35em;
+  border-radius: 0.2cqw;
+  background: var(--pn-code-bg);
+  font-size: 0.9em;
+}
+
+.slidev-layout .tag {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  height: 1.25em;
+  padding: 0 0.5em;
+  margin-right: 0.45em;
+  background: var(--pn-gold);
+  color: var(--pn-fg);
+  font-size: 0.8em;
+  font-weight: 700;
+  line-height: 1.25em;
+  text-indent: 0;
+}
+
+.slidev-layout li:has(> .tag:first-child) {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.slidev-layout li:has(> .tag:first-child)::before {
+  content: none;
+}
+
+.slidev-layout li:has(> .tag:first-child) > ul {
+  padding-left: var(--pn-hang);
+}
+
+.slidev-layout .muted {
+  color: var(--pn-muted);
+}
+
+.slidev-layout .subtitle-size {
+  font-size: 0.5em;
+}
+
+.slidev-layout .caption {
+  color: var(--pn-muted);
+  font-size: var(--pn-caption-size);
+  line-height: var(--pn-line-height);
+}
+
+.slidev-layout .shot {
+  display: block;
+  margin-top: var(--pn-para-gap);
+  border: 1px solid var(--pn-line);
+}
+
+.slidev-layout .shot-center {
+  margin-inline: auto;
+}

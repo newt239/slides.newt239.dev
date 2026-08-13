@@ -2,7 +2,7 @@
 export const slides = [
   {
     "name": "pnpm-12",
-    "title": "pnpm-12",
+    "title": "pnpmのリリース頻度が速すぎる話",
     "date": "2026-08-13",
     "path": "/slides/pnpm-12/"
   },
