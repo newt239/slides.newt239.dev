@@ -1,0 +1,12 @@
+.slidev-layout {
+  --slidev-code-font-size: 2.1cqw;
+  --slidev-code-line-height: 1.5;
+  --slidev-code-padding: 1.5cqw 2cqw;
+  --slidev-code-margin: var(--pn-para-gap) 0 0;
+  --slidev-code-radius: 0;
+}
+
+.slidev-layout pre.shiki {
+  border: 1px solid var(--pn-line);
+  background: var(--pn-code-bg) !important;
+}

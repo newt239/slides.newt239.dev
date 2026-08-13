@@ -1,0 +1,43 @@
+:root {
+  --pn-gold: #f9ad00;
+  --pn-gray: #4e4e4e;
+
+  --pn-bg: #faf7f2;
+  --pn-fg: #2f2f2f;
+  --pn-accent: var(--pn-gold);
+  --pn-muted: #6f6a63;
+
+  --pn-surface: #ffffff;
+  --pn-line: rgb(78 78 78 / 20%);
+  --pn-code-bg: rgb(78 78 78 / 7%);
+
+  --pn-cover-bg: #414141;
+  --pn-cover-fg: #faf7f2;
+
+  --pn-margin-x: 7cqw;
+  --pn-title-top: 6cqh;
+  --pn-title-gap: 6cqh;
+  --pn-footer-top: 93.25cqh;
+  --pn-footer-rule-gap: 1.5cqh;
+
+  --pn-title-size: 2.5cqw;
+  --pn-cover-title-size: 6cqw;
+  --pn-subtitle-size: 2.5cqw;
+  --pn-body-size: 2.7cqw;
+  --pn-caption-size: 1.6cqw;
+  --pn-footer-size: 1.25cqw;
+
+  --pn-title-bar-gap: 1.5cqw;
+
+  --pn-hang: 1.5em;
+  --pn-bullet-gap: 0.5em;
+  --pn-glyph-shift: -0.12em;
+  --pn-para-gap: 1cqw;
+  --pn-line-height: 1.5;
+
+  --pn-font: "A P-OTF UD新ゴ Pr6N", "A P-OTF UD新ゴNT Pr6N", "A-OTF UD新ゴ Pr6N",
+    "Zen Kaku Gothic New", ui-sans-serif, system-ui, -apple-system, "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
+
+  --pn-heading-font: "A-SK ゴナライン Min2", "A-SK ゴナ Min2", var(--pn-font);
+}
