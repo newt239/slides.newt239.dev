@@ -89,6 +89,8 @@ importers:
 
   slides/introducing-until-hidden: {}
 
+  slides/pnpm-12: {}
+
 packages:
 
   '@antfu/install-pkg@1.1.0':

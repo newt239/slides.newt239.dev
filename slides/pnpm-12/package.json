@@ -1,0 +1,9 @@
+{
+  "name": "pnpm-12",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build --base /slides/pnpm-12/ --out dist",
+    "export": "slidev export"
+  }
+}
