@@ -10,14 +10,14 @@
     "update-slides-list": "node scripts/update-slides-list.ts"
   },
   "dependencies": {
-    "@slidev/cli": "52.19.1",
+    "@slidev/cli": "53.0.0",
     "@slidev/theme-default": "0.25.0",
     "@slidev/theme-seriph": "0.25.0",
-    "turbo": "2.10.12",
-    "vue": "3.5.42"
+    "turbo": "2.11.4",
+    "vue": "3.5.43"
   },
   "devDependencies": {
-    "playwright-chromium": "1.62.1"
+    "playwright-chromium": "1.63.0"
   },
   "packageManager": "pnpm@11.10.0"
 }
