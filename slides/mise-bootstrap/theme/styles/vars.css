@@ -1,0 +1,35 @@
+:root {
+  --mb-bg: #fbfaf8;
+  --mb-fg: #1f2230;
+  --mb-muted: #6c6f7d;
+  --mb-accent: #c2185b;
+  --mb-accent-soft: rgb(194 24 91 / 8%);
+  --mb-before: #8a8d99;
+  --mb-surface: #ffffff;
+  --mb-line: rgb(31 34 48 / 12%);
+  --mb-code-bg: #ffffff;
+  --mb-inline-code-bg: rgb(31 34 48 / 6%);
+
+  --mb-margin-x: 6cqw;
+  --mb-title-top: 6.5cqh;
+  --mb-title-gap: 5cqh;
+  --mb-footer-top: 93cqh;
+
+  --mb-title-size: 3cqw;
+  --mb-cover-title-size: 5.6cqw;
+  --mb-subtitle-size: 2.2cqw;
+  --mb-body-size: 2.4cqw;
+  --mb-small-size: 1.8cqw;
+  --mb-lead-size: 1.75cqw;
+  --mb-caption-size: 1.4cqw;
+  --mb-footer-size: 1.2cqw;
+
+  --mb-para-gap: 1.2cqw;
+  --mb-line-height: 1.55;
+
+  --mb-font: "A P-OTF UD新ゴ Pr6N", "A P-OTF UD新ゴNT Pr6N", "A-OTF UD新ゴ Pr6N", "UD新ゴ Pr6N",
+    "UDShinGoPr6N-Regular",
+    "Zen Kaku Gothic New", ui-sans-serif, system-ui, -apple-system, "Hiragino Sans",
+    "Noto Sans JP", sans-serif;
+  --mb-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}

@@ -1,0 +1,46 @@
+.slidev-layout {
+  --slidev-code-font-family: var(--mb-mono);
+  --slidev-code-font-size: 1.45cqw;
+  --slidev-code-line-height: 1.55;
+  --slidev-code-padding: 1.3cqw 1.6cqw;
+  --slidev-code-margin: 0;
+  --slidev-code-radius: 0.6cqw;
+}
+
+.slidev-layout pre.shiki {
+  border: 1px solid var(--mb-line);
+  background: var(--mb-code-bg) !important;
+}
+
+.slidev-layout .code-lg {
+  --slidev-code-font-size: 1.75cqw;
+}
+
+.slidev-layout .code-sm {
+  --slidev-code-font-size: 1.2cqw;
+}
+
+.slidev-layout .code-xs {
+  --slidev-code-font-size: 1.05cqw;
+}
+
+.slidev-layout .code-wrap pre.shiki code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.slidev-layout .code-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4cqh;
+}
+
+.slidev-layout .code-xs pre.shiki {
+  --slidev-code-line-height: 1.45;
+}
+
+.slidev-layout pre.shiki,
+.slidev-layout code {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+}
