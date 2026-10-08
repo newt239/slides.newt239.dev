@@ -89,6 +89,8 @@ importers:
 
   slides/introducing-until-hidden: {}
 
+  slides/mise-bootstrap: {}
+
   slides/pnpm-12: {}
 
 packages:
