@@ -23,6 +23,8 @@ speaker: "@newt239"
 
 # mise bootstrapで<br>dotfilesを宣言的に
 
+<img class="mb-cover-logo" src="./public/mise-logo.svg" alt="">
+
 ---
 layout: image-right
 ---

@@ -38,6 +38,21 @@ defineProps<{ speaker?: string }>()
   content: none;
 }
 
+.mb-cover-logo {
+  position: absolute;
+  top: 50%;
+  right: 4cqw;
+  height: 84cqh;
+  translate: 0 -50%;
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.slidev-layout.mb-cover h1,
+.mb-cover-speaker {
+  position: relative;
+}
+
 .mb-cover-speaker {
   margin-top: 6cqh;
   font-size: var(--mb-subtitle-size);
