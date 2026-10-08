@@ -44,3 +44,8 @@
   font-variant-ligatures: none;
   font-feature-settings: "liga" 0, "calt" 0;
 }
+
+.slidev-layout pre.shiki .comment-line,
+.slidev-layout pre.shiki .comment-line span {
+  font-family: var(--mb-font);
+}
