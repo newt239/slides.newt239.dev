@@ -310,26 +310,98 @@ packages  brew-cask:ghostty                          1.3.1     installed (auto-u
 layout: default
 ---
 
-# CI
+# 導入方法
 
-- `mise bootstrap plan` で適用内容を事前に確認
-- `--only dotfiles` で適用する対象を限定
-- `dotfiles status --missing` で未適用のリンクを確認
+- mise v2026.7.4 以降は experimental 設定なしで利用可能
+- `mise.toml` に `[dotfiles]` や `[bootstrap.*]` を記述
 
-<div class="code-sm">
+| 手順 | コマンド |
+| --- | --- |
+| mise のインストール | `brew install mise` |
+| 設定ファイルを信頼済みとして登録 | `mise trust` |
+| 変更内容の確認 | `mise bootstrap plan` |
+| 反映 | `mise bootstrap` |
 
-```yaml
-- name: Validate config
-  run: |
-    mise trust ~/dotfiles/home/.mise.toml
-    mise bootstrap plan -C ~/dotfiles/home
-    mise bootstrap dotfiles status -C ~/dotfiles/home -E work
-- name: Apply dotfiles
-  run: mise bootstrap -C ~/dotfiles/home --yes --only dotfiles --force-dotfiles
-- name: Check convergence
-  run: mise bootstrap dotfiles status -C ~/dotfiles/home --missing
+---
+layout: default
+---
+
+# そのほかの機能
+
+<div class="feature-grid code-xs">
+<div class="feature-col">
+<div class="feature">
+
+### dotfiles の履歴と巻き戻し
+
+`track` したファイルは変更ごとにチェックポイントを記録
+
+```sh
+# 記録と巻き戻し
+mise bootstrap dotfiles track ~/.zshrc
+mise bootstrap dotfiles history
+mise bootstrap dotfiles rollback ~/.zshrc
+
+# 複数マシンで共有
+mise bootstrap dotfiles origin set <Git URL>
+mise bootstrap dotfiles sync
+mise bootstrap dotfiles pull
 ```
 
+</div>
+<div class="feature">
+
+### モジュール単位の適用と撤去
+
+`mise.<名前>.toml` 単位で選択し、`unapply` で撤去
+
+```sh
+# mise.ssh.toml と mise.gpg.toml もあわせて反映
+mise -E ssh,gpg bootstrap
+# mise.ssh.toml で宣言したものを撤去
+mise bootstrap unapply ssh
+```
+
+</div>
+</div>
+<div class="feature-col">
+<div class="feature">
+
+### 既存の環境から宣言を作成
+
+インストール済みの Homebrew の formula を取り込み
+
+```sh
+mise bootstrap packages import
+```
+
+</div>
+<div class="feature">
+
+### SSH 越しの適用
+
+OpenSSH 経由で複数のマシンに bootstrap を実行
+
+```sh
+mise bootstrap remote --host user@server
+```
+
+</div>
+<div class="feature">
+
+### 常駐プロセスの宣言
+
+LaunchAgent や systemd のサービスとして常駐
+
+```toml
+[bootstrap.services.postgresql]
+scope = "user"
+command = "/opt/homebrew/opt/postgresql@17/bin/postgres"
+environment = { PGDATA = "/opt/homebrew/var/postgresql@17" }
+```
+
+</div>
+</div>
 </div>
 
 ---
